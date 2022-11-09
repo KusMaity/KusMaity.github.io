@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Title -->
+    <script>
+        title = "𝐼'𝑚 𝑗𝑢𝑠𝑡 𝑡𝑟𝑦𝑖𝑛𝑔 𝑡𝑜 𝘩𝑒𝑙𝑝 𝑦𝑜𝑢 𝑢𝑛𝑑𝑒𝑟𝑠𝑡𝑎𝑛𝑑 𝑚𝑒 𝑏𝑒𝑡𝑡𝑒𝑟 ";
+        position = 0;
+        function scrolltitle() {
+            document.title = title.substring(position, title.length) + title.substring(0, position); 
+            position++;
+            if (position > title.length) position = 0;
+            titleScroll = window.setTimeout(scrolltitle,170);
+        }
+        scrolltitle();
+    </script>
+    <link rel="icon" href="./assets/icon.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+    <a id="h" href="#index">
+        <img src="./assets/banner.png">
+    </a>
+
+    <div class="buttons">
+        <!-- Spotify -->
+        <a href="https://open.spotify.com/user/31omkrzvqdjpnlrg3zur6gsld5zy" target="_blank">
+            <img src="./assets/spotify.png">
+        </a>
+        <!-- Down -->
+        <a href="">
+            <img src="./assets/down.gif">
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/_surkus/" target="_blank">
+            <img src="./assets/instagram.png">
+        </a>
+    </div>
+    </div>
+    <div class="content" id="index">
+		<a href="#" id="hide"><img src="assets/up.gif"></a>
+		<div class="flexy">
+            <!-- Greetings -->
+			<p class="sechead"><b>/greetings/</b></p>
+			<a class="cell">"Hello everyone, you can call me KUS, I'm just a Cryptocurrency enthusiast and just a freak people!"</a>
+            <!-- Home -->
+            <p class="sechead"><b>/home/</b></p>
+            <a class="cell" href="https://www.youtube.com/c/RataKiriYT" target="_blank">YOUTUBE!</a>
+            <a class="cell" href="https://discord.gg/f6ZmTEvN25" target="_blank">DISCORD!</a>
+            <a class="cell" href="https://steamcommunity.com/profiles/76561198337347295/" target="_blank">STEAM!</a>
+            <!-- ??? -->
+            <p class="sechead"><b>/ABOUT ME!/</b></p>
+			<a class="cell">"I'm just someone who wants to try something after getting bored I'll leave it."</a>
+            <!-- Notes -->
+            <p class="sechead"><b>/important notes/</b></p>
+			<a class="cell">"This website design is not completely made by me!"</a>
+		</div>
+	</div>
+</body>
+</html>
